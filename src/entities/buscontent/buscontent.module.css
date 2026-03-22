@@ -1,3 +1,9 @@
+.busContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -18,4 +24,9 @@
   display: flex;
   justify-content: center;
   gap: 5px;
+}
+
+.iconStyle {
+  width: var(--icon-size);
+  height: var(--icon-size);
 }

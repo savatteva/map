@@ -1,7 +1,7 @@
 import type { PickingInfo } from "deck.gl"
 import { NAME_MAPPER } from "./model/types"
 
-import styles from "./streetscontents.module.css"
+import styles from "./streetcontent.module.css"
 
 const StreetsContent = ({ data }: { data: PickingInfo }) => {
   const keys = ["ROAD_CATEG", "TYPE_LINK"] as const
