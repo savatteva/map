@@ -1,9 +1,3 @@
-export interface ISub {
-  name_station: string, 
-  name_line: string, 
-  status: string, 
-}
-
 export type TIncomeType = "mck" | "mcd" | "metro"
 
 export const TYPE_NAME_MAPPER = {
