@@ -5,6 +5,7 @@ import { QueryProvider } from './providers';
 import "../shared/styles/variables.css"
 import "../shared/assets/fonts.css"
 
+/**приложение */
 function App() {
   return (
     <QueryProvider>

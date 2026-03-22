@@ -3,7 +3,14 @@ import { NAME_MAPPER } from "./model/types"
 
 import styles from "./districtcontent.module.css"
 
-const DistrictContent = ({ data }: { data: PickingInfo }) => {
+import type { ReactNode } from "react"
+
+/**
+ * контент-наполнение для карточки, описывающей район
+ * @param {PickingInfo} data инфо, хранящееся в geojson'е при выборе элемента
+ * @returns { ReactNode }
+ */
+const DistrictContent = ({ data }: { data: PickingInfo }): ReactNode => {
   const keys = ["NAME_AO", "NAME"] as const
   return (
     <section className={styles.container}>

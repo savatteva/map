@@ -3,8 +3,14 @@ import { NAME_MAPPER } from "./model/types"
 
 import styles from "./buscontent.module.css"
 import type { PickingInfo } from "deck.gl"
+import type { ReactNode } from "react"
 
-const BusContent = ({ data }: { data: PickingInfo }) => {
+/**
+ * контент-наполнение для карточки, описывающей остановку
+ * @param {PickingInfo} data инфо, хранящееся в geojson'е при выборе элемента
+ * @returns { ReactNode }
+ */
+const BusContent = ({ data }: { data: PickingInfo }): ReactNode => {
   const { name_mpv, icon } = data.object.properties
   const keys = ["address_mpv", "ao", "rayon", "marshrut"] as const
 

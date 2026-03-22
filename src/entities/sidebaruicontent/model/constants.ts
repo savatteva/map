@@ -6,6 +6,7 @@ const DistrictContent = lazy(() => import("../../districtcontent/districtcontent
 const StreetsContent = lazy(() => import("../../streetcontent/streetcontent"))
 const CustomContent = lazy(() => import("../../customcontent/customcontent"))
 
+/** объект-маппер для ленивой загрузки компонентов */
 export const MAPPER_ID = {
   "metro": SubContent, 
   "mck": SubContent, 

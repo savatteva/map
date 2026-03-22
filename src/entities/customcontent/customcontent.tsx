@@ -2,7 +2,14 @@ import type { PickingInfo } from "deck.gl";
 import styles from "./customcontent.module.css"
 import { NAME_MAPPER, type TNameMapperKeys } from "./model/types"
 
-const CustomContent = ({ data }: { data: PickingInfo }) => {
+import type { ReactNode } from "react"
+
+/**
+ * контент-наполнение для карточки, описывающей кастомный элемент, созданный пользователем
+ * @param {PickingInfo} data инфо, хранящееся в geojson'е при выборе элемента
+ * @returns { ReactNode }
+ */
+const CustomContent = ({ data }: { data: PickingInfo }): ReactNode => {
   const keys = ["name", "description"] as const;
 
   return (

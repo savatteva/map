@@ -3,8 +3,13 @@ import styles from "./MainPage.module.css"
 import { useLayersData } from "@/entities";
 import { SidebarUIContent } from "@/entities/sidebaruicontent/sidebaruicontent";
 import type { TLayerId } from "@/widgets/map/model/types";
+import type { ReactNode } from "react";
 
-export const MainPage = () => {
+/**
+ * компонент основной страницы
+ * @returns {ReactNode}
+ */
+export const MainPage = (): ReactNode => {
   const { currentSelectedElement, setCurrentSelectedElement } = useLayersData((state) => state);
   const id = currentSelectedElement?.layer?.id as TLayerId
 

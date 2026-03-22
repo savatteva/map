@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { ISavedData } from './types';
 
+/** Стор для маниляции данных для карточки сохранения */
 export const useSavedData = create<ISavedData>()(
   persist((set) => ({
     features: [],

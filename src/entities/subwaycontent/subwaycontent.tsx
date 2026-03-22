@@ -3,8 +3,14 @@ import { NAME_MAPPER, TYPE_NAME_MAPPER, type TIncomeType }  from "./model/types"
 
 import styles from "./subwaycontent.module.css"
 import Icon from "@ant-design/icons";
+import type { ReactNode } from "react";
 
-const SubwayContent = ({ data }: { data: PickingInfo }) => {
+/**
+ * контент-наполнение для карточки, описывающей метро
+ * @param {PickingInfo} data инфо, хранящееся в geojson'е при выборе элемента
+ * @returns { ReactNode }
+ */
+const SubwayContent = ({ data }: { data: PickingInfo }): ReactNode => {
   const { icon } = data.object.properties
   const type = data?.layer?.id as TIncomeType
   const keys = ["name_station", "name_line", "status"] as const

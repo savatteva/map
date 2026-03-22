@@ -1,6 +1,7 @@
 import type { PickingInfo } from "deck.gl";
 import type { Feature } from "geojson";
 
+/** типизирует состояния стора*/
 export interface ILayersStore {
   layersData: {
     districts?: Feature[], 

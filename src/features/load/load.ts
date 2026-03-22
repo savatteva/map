@@ -6,6 +6,11 @@ import type { TInCoords } from './model/types';
 const fromProjection = 'EPSG:3857'; 
 const toProjection = 'EPSG:4326';
 
+/**
+ * Функция для загрузки и приведения к нужному типу данных geojson
+ * @param {string} url путь к локальному файлу 
+ * @returns 
+ */
 export const gpkgQuery = async (url: string) => {
   try {
     const result: any = await load(url, GeoPackageLoader);

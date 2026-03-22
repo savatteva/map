@@ -2,8 +2,14 @@ import type { PickingInfo } from "deck.gl"
 import { NAME_MAPPER } from "./model/types"
 
 import styles from "./streetcontent.module.css"
+import type { ReactNode } from "react"
 
-const StreetsContent = ({ data }: { data: PickingInfo }) => {
+/**
+ * контент-наполнение для карточки, описывающей улицу
+ * @param {PickingInfo} data инфо, хранящееся в geojson'е при выборе элемента
+ * @returns { ReactNode }
+ */
+const StreetsContent = ({ data }: { data: PickingInfo }): ReactNode => {
   const keys = ["ROAD_CATEG", "TYPE_LINK"] as const
   return (
     <section className={styles.container}>

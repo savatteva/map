@@ -2,8 +2,13 @@ import { Input } from "antd"
 
 import styles from "./addobjecttomap.module.css"
 import { useSavedData } from "../model/store"
+import type { ReactNode } from "react"
 
-export const AddObjectToMap = () => {
+/**
+ * возвращает ui для сохранения точки
+ * @returns {ReactNode}
+ */
+export const AddObjectToMap = (): ReactNode => {
   const editFeature = useSavedData(state => state.editFeature) 
 
   return (

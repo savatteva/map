@@ -15,6 +15,7 @@ import { DeckGLOverlay } from './ui/overlaymap';
 import type { Feature } from 'geojson';
 import { StatusContent } from '@/shared/ui';
 
+/** компонент карты основной */
 export const MapComp = () => {
   const mapRef = useRef<MapRef>(null)
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
