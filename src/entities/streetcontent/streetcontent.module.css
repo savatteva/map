@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signContainer {
+  background-color: var(--bg-card);
+  padding: var(--sign-padding);
+  border-radius: var(--border-radius-card);
+}
+
+.signItem {
+  font-size: var(--text-s);
+}
