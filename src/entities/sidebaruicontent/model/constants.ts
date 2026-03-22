@@ -15,3 +15,5 @@ export const MAPPER_ID = {
   "streets": StreetsContent, 
   "customUserLayer": CustomContent,
 } as const
+
+export type TMapperName = keyof typeof MAPPER_ID

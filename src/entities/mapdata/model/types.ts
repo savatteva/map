@@ -14,5 +14,5 @@ export interface ILayersStore {
   currentSelectedElement: PickingInfo | null,
 
   setLayerData: (id: string, data: Feature[]) => void, 
-  setCurrentSelectedElement: (element: PickingInfo) => void
+  setCurrentSelectedElement: (element: PickingInfo | null) => void
 }
