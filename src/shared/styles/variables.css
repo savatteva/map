@@ -1,0 +1,13 @@
+:root {
+  --bg-color: #fff;
+  --text-primary: #000;
+  --bg-card: #f5f0fb;
+  --primary-color: #7C28E3;
+
+  --text-s: 12px;
+
+  --icon-size: 30px;
+  --sign-padding: 6px;
+  --border-radius-card: 10px;
+  --border-radius-logo: 10px;
+}
