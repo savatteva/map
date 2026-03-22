@@ -16,5 +16,5 @@ export const AddObjectToMap = () => {
       </div>
       <Input placeholder="Описание" onChange={(e) => editFeature(e.target.value, 0, "description")} />
     </section>
-    )
+  )
 }

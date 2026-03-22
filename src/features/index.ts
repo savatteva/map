@@ -1,4 +1,4 @@
 export { gpkgQuery } from "./load/load"
-export {AddObjectToMap} from "./addobjecttomap/ui/addobjecttomap"
+export { AddObjectToMap } from "./addobjectstomap/ui/addobjecttomap"
 
-export { useSavedData } from "./addobjecttomap/model/store"
+export { useSavedData } from "./addobjectstomap/model/store"
